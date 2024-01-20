@@ -36,5 +36,5 @@ class Var(object):
     else:
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://lucifer:n6WGdEL12FNqHTA2@geek-squad.d1cyvbw.mongodb.net/'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'GrayMatter_Bots'))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'MovieBotChannel'))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
